@@ -1,5 +1,6 @@
 const gulp = require('gulp');
       sass = require('gulp-sass');
+      concat = require('gulp-concat');
 
 const paths = {
     css : {
@@ -12,6 +13,8 @@ function css(){
     return gulp.src(paths.css.src)
 
     .pipe(sass())
+
+    .pipe(concat('index.css'))
 
     .pipe(gulp.dest(paths.css.dest))
 }
