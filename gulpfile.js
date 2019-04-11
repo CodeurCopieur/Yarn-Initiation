@@ -43,9 +43,12 @@ function watch(){
 
 }
 
-const build = gulp.series(clean, gulp.parallel(css));
+const build = gulp.series(clean, gulp.parallel(css, watch));
 
 exports.clean = clean;
 exports.css = css;
 exports.build = build;
 exports.watch = watch;
+
+//Nous assignons également cette nouvelle tâche build comme étant notre tâche par défaut :
+gulp.task('default', build);
