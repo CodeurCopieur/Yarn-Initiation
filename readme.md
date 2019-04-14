@@ -1,6 +1,5 @@
 # Yarn - Initiation
-Pour ce projet, j'utilise Bower le gestionnaire de dépendance.
-Il permet de gérer les librairies CSS et JS.
+Pour mon Workflow, j'utilise Yarn pour la première fois, c'est un gestionnaire de packages.
 
 ## Installation
 ````
